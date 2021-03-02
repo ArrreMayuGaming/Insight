@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:insight/commonuser/maindrawer.dart';
 
 class MysecurityPage extends StatefulWidget {
   @override
@@ -9,93 +8,7 @@ class MysecurityPage extends StatefulWidget {
 class _MyAppState extends State<MysecurityPage> {
   @override
   Widget build(BuildContext context) {
-    /* return new Scaffold(
-      backgroundColor: Colors.blue[100],
-      appBar: AppBar(
-        title: Text("Inspire Lives!"),
-      ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(6.0),
-          child: Container(
-            child: SingleChildScrollView(
-              child: Card(
-                child: Column(
-                  children: <Widget>[
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Image.asset(
-                      "assets/ismacColored/s.png",
-                      height: 80,
-                    ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      "SECURITY",
-                      style: TextStyle(
-                          fontSize: 38,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black),
-                    ),
-                    SizedBox(
-                      height: 25,
-                    ),
-                    Text(
-                      "ENHANCE YOUR PROTECTION",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Image.asset("assets/security1.jpg"),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      "Our next-gen information security & compliance programs can keep your computers safe from rootkits, viruses and trojans while also improving cost-effectiveness, flexibility and agility of your business network.",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.center,
-                    ),
-                    SizedBox(
-                      height: 50,
-                    ),
-                    Text(
-                      "SECURE  YOUR ENTERPRISE",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Image.asset("assets/security2.jpg"),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      "Insight’s Security & Privacy framework helps the customer understand in-depth information risk in internal access level, external/internal threats, internet at physical level, while giving protection across the entire IT infrastructure without adding unnecessary cost and complexity.",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.center,
-                    ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );*/
+    
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,

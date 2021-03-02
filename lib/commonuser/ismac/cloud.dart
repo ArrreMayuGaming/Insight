@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:insight/commonuser/maindrawer.dart';
 
 class MycloudPage extends StatefulWidget {
   @override
@@ -9,93 +8,7 @@ class MycloudPage extends StatefulWidget {
 class _MyAppState extends State<MycloudPage> {
   @override
   Widget build(BuildContext context) {
-    /*  return new Scaffold(
-      backgroundColor: Colors.blue[100],
-      appBar: AppBar(
-        title: Text("Inspire Lives!"),
-      ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(6.0),
-          child: Container(
-            child: SingleChildScrollView(
-              child: Card(
-                child: Column(
-                  children: <Widget>[
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Image.asset(
-                      "assets/ismacColored/c.png",
-                      height: 80,
-                    ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      "CLOUD",
-                      style: TextStyle(
-                          fontSize: 38,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black),
-                    ),
-                    SizedBox(
-                      height: 25,
-                    ),
-                    Text(
-                      "INTELLIGENCE TO THE CORE",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Image.asset("assets/cloud1.jpg"),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      "Cloud services are designed to help organizations make the right choices in maximizing returns from their cloud investments. Our understanding of legacy infrastructure and applications allows us to deploy and manage solutions that coexist on the Cloud. Choosing the right technology and the right partner to design and implement a sound Cloud-strategy is imperative.",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.center,
-                    ),
-                    SizedBox(
-                      height: 50,
-                    ),
-                    Text(
-                      "CREATING A VERSATILE SPACE",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Image.asset("assets/cloud2.jpg"),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      "Insight's Cloud Service enables you to have access to the technologies and applications which are acknowledged and trusted to build Cloud solutions. It unlocks new opportunities with better and meaningful end customer experience.",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.center,
-                    ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );*/
+    
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:insight/commonuser/casedetail.dart';
-import 'package:insight/commonuser/maindrawer.dart';
 import 'package:insight/dataModels/casestudymodel.dart';
 
 class CaseStudyDetails extends StatefulWidget {

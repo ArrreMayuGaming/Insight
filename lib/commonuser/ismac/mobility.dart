@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:insight/commonuser/maindrawer.dart';
 
 class MymobilityPage extends StatefulWidget {
   @override
@@ -9,93 +8,7 @@ class MymobilityPage extends StatefulWidget {
 class _MyAppState extends State<MymobilityPage> {
   @override
   Widget build(BuildContext context) {
-    /* return new Scaffold(
-      backgroundColor: Colors.blue[100],
-      appBar: AppBar(
-        title: Text("Inspire Lives!"),
-      ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(6.0),
-          child: Container(
-            child: SingleChildScrollView(
-              child: Card(
-                child: Column(
-                  children: <Widget>[
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Image.asset(
-                      "assets/ismacColored/m.png",
-                      height: 80,
-                    ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      "MOBILITY",
-                      style: TextStyle(
-                          fontSize: 38,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black),
-                    ),
-                    SizedBox(
-                      height: 25,
-                    ),
-                    Text(
-                      "A SEAMLESS TRANSITION",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Image.asset("assets/mobility1.jpg"),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      "Every industry has unique challenges and needs to evolve into a truly mobile enterprise. Whether those are regulation and compliance issues or the workplace environment, businesses need to have the right approach, backed by innovative custom-made point solutions aligned to the industry business processes.",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.center,
-                    ),
-                    SizedBox(
-                      height: 50,
-                    ),
-                    Text(
-                      "TAKING IT TO THE NEXT LEVEL",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Image.asset("assets/mobility2.jpg"),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      "Insight's Mobile & Wireless Solutions not only cater to various industries such as Healthcare, Pharmaceuticals, Logistics and Retail, but its framework can also adopted by any business model.",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.center,
-                    ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );*/
+   
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,

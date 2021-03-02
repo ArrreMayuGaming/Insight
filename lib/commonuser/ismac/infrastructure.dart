@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:insight/commonuser/maindrawer.dart';
 
 class CommonThings {
   static Size size;
@@ -14,96 +13,7 @@ class _MyAppState extends State<MyInfraPage> {
   @override
   Widget build(BuildContext context) {
     CommonThings.size = MediaQuery.of(context).size;
-    /* return new Scaffold(
-      backgroundColor: Colors.blue[100],
-      appBar: AppBar(
-        title: Text("Inspire Lives!"),
-      ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(6.0),
-          child: Container(
-            child: SingleChildScrollView(
-              child: Card(
-                child: Column(
-                  children: <Widget>[
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Image.asset(
-                      "assets/ismacColored/i.png",
-                      height: 80,
-                    ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Hero(
-                      tag: 'infra',
-                      child: Text(
-                        "INFRASTRUCTURE",
-                        style: TextStyle(
-                            fontSize: 38,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 25,
-                    ),
-                    Text(
-                      "COVERING ASPECTS",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Image.asset("assets/infra2.jpg"),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      "We understand the modern day challenges faced by organizations. Hence, we provide world-class comprehensive support services that cater to resources including tangible investments like computer hardware, software, data, networks and data centre facilities.",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.center,
-                    ),
-                    SizedBox(
-                      height: 50,
-                    ),
-                    Text(
-                      "SIMPLIFYING THE FUTURE",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Image.asset("assets/infra1.jpg"),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      "Insight's Infrastructure Solutions and Services achieve that by enabling your business to be always available, scalable and flexible as per new-age trend's needs and requirement. Our solutions conveniently assist you in managing the IT Infrastructure across all verticals.",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.center,
-                    ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );*/
+   
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,

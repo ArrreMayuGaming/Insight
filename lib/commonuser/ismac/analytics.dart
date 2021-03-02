@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:insight/commonuser/maindrawer.dart';
 
 class MyAnalyticsPage extends StatefulWidget {
   @override
@@ -9,93 +8,7 @@ class MyAnalyticsPage extends StatefulWidget {
 class _MyAppState extends State<MyAnalyticsPage> {
   @override
   Widget build(BuildContext context) {
-    /*return new Scaffold(
-      backgroundColor: Colors.blue[100],
-      appBar: AppBar(
-        title: Text("Inspire Lives!"),
-      ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(6.0),
-          child: Container(
-            child: SingleChildScrollView(
-              child: Card(
-                child: Column(
-                  children: <Widget>[
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Image.asset(
-                      "assets/ismacColored/a.png",
-                      height: 80,
-                    ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      "ANALYTICS",
-                      style: TextStyle(
-                          fontSize: 38,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black),
-                    ),
-                    SizedBox(
-                      height: 25,
-                    ),
-                    Text(
-                      "MONETIZING YOUR DATA",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Image.asset("assets/analytics1.jpg"),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      "An organization that's progressive, establishes a data-driven culture which brings business and IT together to ensure maximum output from data-analytics. This holistic approach caters to the existing people, process and technology investments in the enterprise, transforming it and enabling the enterprise to monetize data.",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.center,
-                    ),
-                    SizedBox(
-                      height: 50,
-                    ),
-                    Text(
-                      "GAINING AN EDGE",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Image.asset("assets/analytics2.jpg"),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      "With Insight's Cutting-Edge Strategic Analysis organizations can harness their data and use it to identify a new opportunity, which in turn, leads to smarter business moves, more efficient operations, higher profits and happier customers.",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.center,
-                    ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );*/
+    
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,

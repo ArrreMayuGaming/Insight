@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:insight/commonuser/maindrawer.dart';
 import 'package:insight/dataModels/casestudymodel.dart';
 
-/* DataCaseStudy dataCaseStudy;
-  CaseDetails({this.dataCaseStudy}); */
 class CaseDetails extends StatelessWidget {
-  DataCaseStudy dataCaseStudy;
+ final DataCaseStudy dataCaseStudy;
   CaseDetails({this.dataCaseStudy});
   @override
   Widget build(BuildContext context) {

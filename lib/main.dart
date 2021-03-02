@@ -12,7 +12,6 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Insight India',
-     
       theme: ThemeData(
         textTheme: GoogleFonts.robotoTextTheme(
           Theme.of(context).textTheme,
