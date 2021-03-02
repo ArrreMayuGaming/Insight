@@ -26,7 +26,7 @@ class _CaseStudyDetailsState extends State<CaseStudyDetails> {
           ),
         ),
       ),
-      drawer: MainDrawer(),
+     
       body: Container(
         height: double.infinity,
         child: ListView.builder(

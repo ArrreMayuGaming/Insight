@@ -43,10 +43,14 @@ class _CommonGateState extends State<CommonGate> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 5,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(20.0),
+                bottomRight: Radius.circular(20.0))),
         centerTitle: true,
         title: Image.asset(
           'assets/logo.png',
-          height: size.height * 0.07,
+          height: MediaQuery.of(context).size.height * 0.07,
         ),
       ),
       drawer: MainDrawer(),
@@ -566,11 +570,11 @@ class _CommonGateState extends State<CommonGate> {
                                           textAlign: TextAlign.left,
                                         ),
                                         Image.asset(
-                                          'assets/teammngt.png',
+                                          'assets/casestudy.png',
                                           height: MediaQuery.of(context)
                                                   .size
                                                   .height *
-                                              0.2,
+                                              0.12,
                                         ),
                                       ],
                                     ),

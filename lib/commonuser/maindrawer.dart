@@ -32,6 +32,9 @@ class _MainDrawerState extends State<MainDrawer> {
                 height: MediaQuery.of(context).size.height * 0.8,
                 child: Column(
                   children: <Widget>[
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.05,
+                    ),
                     Container(
                       height: MediaQuery.of(context).size.height * 0.1,
                       child: Column(

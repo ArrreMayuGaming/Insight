@@ -16,7 +16,7 @@ class MngtTeamPage extends StatelessWidget {
           height: size.height * 0.07,
         ),
       ),
-      drawer: MainDrawer(),
+      
       body: SafeArea(
         child: SingleChildScrollView(
           padding: EdgeInsets.all(10.0),

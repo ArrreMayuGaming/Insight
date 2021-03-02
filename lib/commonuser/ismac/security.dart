@@ -106,7 +106,7 @@ class _MyAppState extends State<MysecurityPage> {
           height: MediaQuery.of(context).size.height * 0.07,
         ),
       ),
-      drawer: MainDrawer(),
+     
       body: SafeArea(
         bottom: false,
         child: Stack(
