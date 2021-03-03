@@ -48,25 +48,14 @@ class _MyAppState extends State<MyInfraPage> {
                         ),
                         Container(
                           width: MediaQuery.of(context).size.width - 20,
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget>[
-                              Image.asset(
-                                "assets/ismacColored/i.png",
-                                height:
-                                    MediaQuery.of(context).size.height * 0.12,
-                              ),
-                              Text(
-                                "INFRASTRUCTURE",
-                                style: TextStyle(
-                                  fontSize: 35,
-                                  color: const Color(0xff47455f),
-                                  fontWeight: FontWeight.w900,
-                                ),
-                                textAlign: TextAlign.left,
-                              ),
-                            ],
+                          child: Text(
+                            "INFRASTRUCTURE",
+                            style: TextStyle(
+                              fontSize: 35,
+                              color: const Color(0xff47455f),
+                              fontWeight: FontWeight.w900,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
                         ),
                         Text(

@@ -43,24 +43,14 @@ class _MyAppState extends State<MycloudPage> {
                         ),
                         Container(
                           width: MediaQuery.of(context).size.width - 20,
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: <Widget>[
-                              Image.asset(
-                                "assets/ismacColored/c.png",
-                                height:
-                                    MediaQuery.of(context).size.height * 0.2,
-                              ),
-                              Text(
-                                "CLOUD",
-                                style: TextStyle(
-                                  fontSize: 40,
-                                  color: const Color(0xff47455f),
-                                  fontWeight: FontWeight.w900,
-                                ),
-                                textAlign: TextAlign.left,
-                              ),
-                            ],
+                          child: Text(
+                            "CLOUD",
+                            style: TextStyle(
+                              fontSize: 40,
+                              color: const Color(0xff47455f),
+                              fontWeight: FontWeight.w900,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
                         ),
                         Text(

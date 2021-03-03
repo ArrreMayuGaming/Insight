@@ -8,7 +8,6 @@ class MyAnalyticsPage extends StatefulWidget {
 class _MyAppState extends State<MyAnalyticsPage> {
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -19,7 +18,6 @@ class _MyAppState extends State<MyAnalyticsPage> {
           height: MediaQuery.of(context).size.height * 0.07,
         ),
       ),
-     
       body: SafeArea(
         bottom: false,
         child: Stack(
@@ -43,25 +41,14 @@ class _MyAppState extends State<MyAnalyticsPage> {
                         ),
                         Container(
                           width: MediaQuery.of(context).size.width - 20,
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget>[
-                              Image.asset(
-                                "assets/ismacColored/a.png",
-                                height:
-                                    MediaQuery.of(context).size.height * 0.12,
-                              ),
-                              Text(
-                                "ANALYTICS",
-                                style: TextStyle(
-                                  fontSize: 40,
-                                  color: const Color(0xff47455f),
-                                  fontWeight: FontWeight.w900,
-                                ),
-                                textAlign: TextAlign.left,
-                              ),
-                            ],
+                          child: Text(
+                            "ANALYTICS",
+                            style: TextStyle(
+                              fontSize: 40,
+                              color: const Color(0xff47455f),
+                              fontWeight: FontWeight.w900,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
                         ),
                         Text(
