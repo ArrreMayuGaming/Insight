@@ -1,4 +1,3 @@
-
 import 'package:carousel_slider/carousel_options.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
@@ -39,6 +38,7 @@ class _CommonGateState extends State<CommonGate> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      extendBodyBehindAppBar: true,
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -65,13 +65,13 @@ class _CommonGateState extends State<CommonGate> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       SizedBox(
-                        height: size.height * 0.02,
+                        height: size.height * 0.005,
                       ),
                       //animated text and after animated text
                       Container(
                         padding: EdgeInsets.all(5),
                         width: MediaQuery.of(context).size.width,
-                        height: size.height * 0.3,
+                        height: size.height * 0.25,
                         decoration: new BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(25),
@@ -91,17 +91,17 @@ class _CommonGateState extends State<CommonGate> {
                                 1,
                                 Column(
                                   children: <Widget>[
-                                    Text(
+                                    /*  Text(
                                       'We are',
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
-                                          color: Colors.black,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w200,
-                                          fontFamily: 'Roboto'),
-                                    ),
+                                        color: Colors.black,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w200,
+                                      ),
+                                    ),*/
                                     Text(
-                                      'Insight Business Machine',
+                                      'Insight Business Machines \nPvt. Ltd.',
                                       style: GoogleFonts.roboto(
                                         textStyle: TextStyle(
                                           color: Colors.black,
@@ -109,10 +109,11 @@ class _CommonGateState extends State<CommonGate> {
                                           fontWeight: FontWeight.w700,
                                         ),
                                       ),
+                                      textAlign: TextAlign.center,
                                     ),
                                     Image.asset(
                                       'assets/ismac.png',
-                                      height: size.height * 0.2,
+                                      height: size.height * 0.15,
                                     )
                                   ],
                                 ),
@@ -132,10 +133,10 @@ class _CommonGateState extends State<CommonGate> {
                                   'Lives!'
                                 ],
                                 textStyle: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 40,
-                                    fontWeight: FontWeight.w700,
-                                    fontFamily: 'Roboto'),
+                                  color: Colors.black,
+                                  fontSize: 40,
+                                  fontWeight: FontWeight.w700,
+                                ),
                                 onFinished: () {
                                   setState(() {
                                     textAnimating = false;

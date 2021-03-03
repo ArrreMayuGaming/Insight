@@ -6,7 +6,7 @@ class CaseDetails extends StatelessWidget {
   CaseDetails({this.dataCaseStudy});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(extendBodyBehindAppBar: true,
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,

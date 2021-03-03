@@ -14,7 +14,7 @@ class _MyAppState extends State<MyInfraPage> {
   Widget build(BuildContext context) {
     CommonThings.size = MediaQuery.of(context).size;
    
-    return Scaffold(
+    return Scaffold(extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 5,

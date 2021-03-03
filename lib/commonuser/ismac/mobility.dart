@@ -9,7 +9,7 @@ class _MyAppState extends State<MymobilityPage> {
   @override
   Widget build(BuildContext context) {
    
-    return Scaffold(
+    return Scaffold(extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 5,

@@ -159,7 +159,7 @@ List<DataCaseStudy> casestudy = [
   DataCaseStudy(
     pos: 10, bgcolor: 'Colors.red[100]',
     caseimg: 'assets/casestudy/aambeyvalley.jpg',
-    name: "Amby Valley City",
+    name: "Aamby Valley City",
     aboutcompanyDesc:
         "Sahara India has developed an iconic state-of-the-art facility named at ‘Parinee Crescendo, BKC’ for its corporate operations in Mumbai. This facility is envisaged to offer future proof IT facilities to its tenants / users. ‘Go green’ approach is the primary agenda for Sahara Next who is an Offshore Development & Information Technology outsourcing company providing services and solutions to varied enterprises worldwide.",
     challengeDesc:

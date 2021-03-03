@@ -371,7 +371,7 @@ class CustomListItems7 extends StatelessWidget {
               children: <Widget>[
                 Row(
                   children: <Widget>[
-                    Icon(Icons.phone_enabled),
+                    Icon(Icons.mail_outline),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
