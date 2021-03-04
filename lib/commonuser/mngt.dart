@@ -12,7 +12,7 @@ class MngtTeamPage extends StatelessWidget {
         centerTitle: true,
         title: Image.asset(
           'assets/logo.png',
-          height: size.height * 0.07,
+          height: size.height * 0.06,
         ),
       ),
       

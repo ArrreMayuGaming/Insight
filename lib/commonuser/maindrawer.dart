@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:insight/commonuser/vmsuserpage.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MainDrawer extends StatefulWidget {
@@ -85,6 +86,7 @@ class _MainDrawerState extends State<MainDrawer> {
           CustomListItems5(),
           CustomListItems6(),
           CustomListItems7(),
+          //CustomListItems8(),
         ],
       ),
     );
@@ -390,3 +392,46 @@ class CustomListItems7 extends StatelessWidget {
     );
   }
 }
+
+/*class CustomListItems8 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(8.0, 0, 8.0, 0),
+      child: Container(
+        decoration: BoxDecoration(
+            border: Border(bottom: BorderSide(color: Colors.grey[400]))),
+        child: InkWell(
+          splashColor: Colors.orange[200],
+          onTap: () {
+            Navigator.push(
+                context,
+                PageRouteBuilder(
+                    pageBuilder: (context, a, b) => UserVMSPage()));
+          },
+          child: Container(
+            height: MediaQuery.of(context).size.height * 0.08,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    Icon(Icons.note_add_outlined),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Visitor's Entry",
+                        style: TextStyle(fontSize: 16.0),
+                      ),
+                    ),
+                  ],
+                ),
+                Icon(Icons.arrow_right),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}*/

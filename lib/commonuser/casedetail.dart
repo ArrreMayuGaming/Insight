@@ -14,7 +14,7 @@ class CaseDetails extends StatelessWidget {
         centerTitle: true,
         title: Image.asset(
           'assets/logo.png',
-          height: MediaQuery.of(context).size.height * 0.07,
+          height: MediaQuery.of(context).size.height * 0.06,
         ),
       ),
      
