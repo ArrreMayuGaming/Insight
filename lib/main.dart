@@ -1,24 +1,53 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:insight/splashscreen.dart';
+import 'package:insight/auth/authservice.dart';
+import 'package:insight/commonuser/commongate.dart';
+import 'package:insight/employee/empgate.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:provider/provider.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Insight India',
-      theme: ThemeData(
-        textTheme: GoogleFonts.robotoTextTheme(
-          Theme.of(context).textTheme,
+    return MultiProvider(providers: [
+        Provider<AuthService>(
+          create: (_) => AuthService(FirebaseAuth.instance),
         ),
-        primaryIconTheme: IconThemeData(color: Colors.black),
+        StreamProvider(
+          create: (context) => context.read<AuthService>().onAuthStsateChanged,
+        )
+      ],
+      child: new MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Insight India',
+        theme: ThemeData(
+          textTheme: GoogleFonts.robotoTextTheme(
+            Theme.of(context).textTheme,
+          ),
+          primaryIconTheme: IconThemeData(color: Colors.black),
+        ),
+         home: AppGate(),
       ),
-      home: SplashScreenPage(),
     );
   }
 }
+
+class AppGate extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final firebaseuser = context.watch<User>();
+
+    if (firebaseuser != null) {
+      return EmpGate();
+    }
+    return CommonGate();
+  }
+}
+

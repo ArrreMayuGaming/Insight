@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:insight/commonuser/vmsuserpage.dart';
+import 'package:insight/auth/login.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MainDrawer extends StatefulWidget {
@@ -179,7 +179,10 @@ class CustomListItems3 extends StatelessWidget {
             border: Border(bottom: BorderSide(color: Colors.grey[400]))),
         child: InkWell(
           splashColor: Colors.orange[200],
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => LoginUser()));
+          },
           child: Container(
             height: MediaQuery.of(context).size.height * 0.08,
             child: Row(
@@ -191,7 +194,7 @@ class CustomListItems3 extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        'Logout Me!',
+                        'Employee Login',
                         style: TextStyle(fontSize: 16.0),
                       ),
                     ),

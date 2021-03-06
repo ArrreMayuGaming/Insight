@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "360932765293",
+    "project_id": "insight-ed37c",
+    "storage_bucket": "insight-ed37c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360932765293:android:9f426b118a8412b89d9964",
+        "android_client_info": {
+          "package_name": "com.insight.ismac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360932765293-np2tnepj66mlj5lojle2rm6e9santqae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHdVauQSvSwwadkAaTO8eEVCOHDWkYXKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360932765293-np2tnepj66mlj5lojle2rm6e9santqae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
