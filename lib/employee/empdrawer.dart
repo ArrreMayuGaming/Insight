@@ -1,13 +1,15 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:insight/auth/login.dart';
+import 'package:insight/commonuser/commongate.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class MainDrawer extends StatefulWidget {
+class EmpDrawer extends StatefulWidget {
   @override
-  _MainDrawerState createState() => _MainDrawerState();
+  _EmpDrawerState createState() => _EmpDrawerState();
 }
 
-class _MainDrawerState extends State<MainDrawer> {
+class _EmpDrawerState extends State<EmpDrawer> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -79,13 +81,14 @@ class _MainDrawerState extends State<MainDrawer> {
               ),
             ),
           ),
-          /* CustomListItems1(),
-          CustomListItems2(),*/
-          CustomListItems3(),
+          CustomListItems1(),
+          //CustomListItems2(),
+
           //  CustomListItems4(),
           CustomListItems5(),
           CustomListItems6(),
           CustomListItems7(),
+          CustomListItems3(),
           //CustomListItems8(),
         ],
       ),
@@ -102,7 +105,7 @@ class CustomListItems1 extends StatelessWidget {
         decoration: BoxDecoration(
             border: Border(bottom: BorderSide(color: Colors.grey[400]))),
         child: InkWell(
-          splashColor: Colors.orange[200],
+          splashColor: Colors.blue[600],
           onTap: () {},
           child: Container(
             height: MediaQuery.of(context).size.height * 0.08,
@@ -140,7 +143,7 @@ class CustomListItems2 extends StatelessWidget {
         decoration: BoxDecoration(
             border: Border(bottom: BorderSide(color: Colors.grey[400]))),
         child: InkWell(
-          splashColor: Colors.orange[200],
+          splashColor: Colors.blue[600],
           onTap: () {},
           child: Container(
             height: MediaQuery.of(context).size.height * 0.08,
@@ -178,10 +181,12 @@ class CustomListItems3 extends StatelessWidget {
         decoration: BoxDecoration(
             border: Border(bottom: BorderSide(color: Colors.grey[400]))),
         child: InkWell(
-          splashColor: Colors.orange[200],
+          splashColor: Colors.blue[600],
           onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => LoginUser()));
+            FirebaseAuth.instance.signOut().then((_) {
+              Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => CommonGate()));
+            });
           },
           child: Container(
             height: MediaQuery.of(context).size.height * 0.08,
@@ -190,11 +195,11 @@ class CustomListItems3 extends StatelessWidget {
               children: <Widget>[
                 Row(
                   children: <Widget>[
-                    Icon(Icons.login_outlined),
+                    Icon(Icons.logout),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        'Employee Login',
+                        'Logout Me!',
                         style: TextStyle(fontSize: 16.0),
                       ),
                     ),
@@ -219,7 +224,7 @@ class CustomListItems4 extends StatelessWidget {
         decoration: BoxDecoration(
             border: Border(bottom: BorderSide(color: Colors.grey[400]))),
         child: InkWell(
-          splashColor: Colors.orange[200],
+          splashColor: Colors.blue[600],
           onTap: () {},
           child: Container(
             height: MediaQuery.of(context).size.height * 0.08,
@@ -266,7 +271,7 @@ class CustomListItems5 extends StatelessWidget {
         decoration: BoxDecoration(
             border: Border(bottom: BorderSide(color: Colors.grey[400]))),
         child: InkWell(
-          splashColor: Colors.orange[200],
+          splashColor: Colors.blue[600],
           onTap: () {
             _launchURL();
           },
@@ -316,7 +321,7 @@ class CustomListItems6 extends StatelessWidget {
         decoration: BoxDecoration(
             border: Border(bottom: BorderSide(color: Colors.grey[400]))),
         child: InkWell(
-          splashColor: Colors.orange[200],
+          splashColor: Colors.blue[600],
           onTap: () {
             _launchURL();
           },
@@ -365,7 +370,7 @@ class CustomListItems7 extends StatelessWidget {
         decoration: BoxDecoration(
             border: Border(bottom: BorderSide(color: Colors.grey[400]))),
         child: InkWell(
-          splashColor: Colors.orange[200],
+          splashColor: Colors.blue[600],
           onTap: () {
             _launchURL();
           },
@@ -405,7 +410,7 @@ class CustomListItems7 extends StatelessWidget {
         decoration: BoxDecoration(
             border: Border(bottom: BorderSide(color: Colors.grey[400]))),
         child: InkWell(
-          splashColor: Colors.orange[200],
+          splashColor: Colors.blue[600],
           onTap: () {
             Navigator.push(
                 context,
