@@ -1,4 +1,4 @@
-package com.example.insight
+package com.insight.ismac
 
 import io.flutter.embedding.android.FlutterActivity
 

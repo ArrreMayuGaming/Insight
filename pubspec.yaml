@@ -23,25 +23,27 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  animations: ^1.1.2
+  animated_text: ^1.0.2
+  animations: ^2.0.0
+  carousel_slider: ^3.0.0
   cupertino_icons: ^1.0.0
   curved_navigation_bar: ^0.3.7
+  firebase: ^9.0.0
+  firebase_auth: ^1.0.0
+  firebase_core: ^1.0.0
+  firebase_database: ^6.1.0
+  firebase_storage: ^8.0.0
   flare_flutter: ^2.0.6
-  google_fonts: ^1.1.2
-  intl: 
-  provider: ^4.3.3
-  font_awesome_flutter: ^8.11.0
-  animated_text: ^1.0.2
-  carousel_slider: ^3.0.0
-  simple_animations: ^2.5.1
-  url_launcher: 
-  splashscreen: ^1.3.5
-  webview_flutter: ^1.0.7
   fluttertoast: ^7.1.8
-
-  #firebase package
-  firebase_core: 
-  firebase_auth: 
+  font_awesome_flutter: ^8.11.0
+  google_fonts: 
+  intl: null
+  provider: ^5.0.0
+  simple_animations: ^2.5.1
+  splashscreen: ^1.3.5
+  meta: ^1.3.0
+  url_launcher: null
+  http: ^0.13.0 
   
 
 dev_dependencies:
@@ -64,7 +66,6 @@ flutter:
     - assets/ismacPng/
     - assets/partners/
     - assets/casestudy/
-
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

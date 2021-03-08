@@ -1,8 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:insight/auth/login.dart';
 
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:insight/auth/verify.dart';
 
 class RegisterUser extends StatefulWidget {
   RegisterUserState createState() => RegisterUserState();
@@ -25,7 +26,19 @@ class RegisterUserState extends State<RegisterUser> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('SignUp')),
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 5,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(20.0),
+                bottomRight: Radius.circular(20.0))),
+        centerTitle: true,
+        title: Image.asset(
+          'assets/logo.png',
+          height: MediaQuery.of(context).size.height * 0.06,
+        ),
+      ),
       body: SingleChildScrollView(
         child: Center(
           child: Column(
@@ -157,15 +170,16 @@ class RegisterUserState extends State<RegisterUser> {
                       email: emailid,
                       password: password,
                     )
-                        .then((_) {
+                        .then((_) async {
+                      // ignore: unused_local_variable
                       auth.currentUser.updateProfile(
                         displayName: empname.trim(),
                       );
 
-                      Navigator.of(context).pushReplacement(
-                          MaterialPageRoute(builder: (context) => LoginUser()));
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => VerifyPage()));
                     });
-                  } on FirebaseAuthException catch (e) {
+                  } on FirebaseException catch (e) {
                     setState(() {
                       visible = false;
                     });

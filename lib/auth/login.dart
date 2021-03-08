@@ -1,9 +1,10 @@
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:insight/auth/signup.dart';
 import 'package:insight/employee/empgate.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class LoginUser extends StatefulWidget {
   LoginUserState createState() => LoginUserState();
@@ -26,7 +27,17 @@ class LoginUserState extends State {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Insight Employee Login'),
+          backgroundColor: Colors.white,
+          elevation: 5,
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(20.0),
+                  bottomRight: Radius.circular(20.0))),
+          centerTitle: true,
+          title: Image.asset(
+            'assets/logo.png',
+            height: MediaQuery.of(context).size.height * 0.06,
+          ),
         ),
         body: SingleChildScrollView(
             child: Center(
@@ -46,7 +57,7 @@ class LoginUserState extends State {
                         animation: animationType,
                       ),
                     ),
-                    backgroundColor: Colors.deepOrange,
+                    backgroundColor: Colors.blue[600],
                   ),
                 ),
               ),
@@ -123,12 +134,29 @@ class LoginUserState extends State {
                           email: emailid,
                           password: password,
                         )
-                            .then((_) {
-                          Navigator.of(context).pushReplacement(
-                              MaterialPageRoute(
-                                  builder: (context) => EmpGate()));
+                            .then((_) async {
+                          var user = auth.currentUser;
+                          if (user.emailVerified) {
+                            Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(
+                                    builder: (context) => EmpGate()));
+                          } else {
+                            setState(() {
+                              visible = false;
+                            });
+                            emailController.clear();
+                            passwordController.clear();
+                            Fluttertoast.showToast(
+                                msg: "Unverified Email!",
+                                toastLength: Toast.LENGTH_SHORT,
+                                gravity: ToastGravity.TOP,
+                                timeInSecForIosWeb: 1,
+                                backgroundColor: Colors.black,
+                                textColor: Colors.white,
+                                fontSize: 16.0);
+                          }
                         });
-                      } on FirebaseAuthException catch (e) {
+                      } on FirebaseException catch (e) {
                         setState(() {
                           visible = false;
                         });
@@ -146,7 +174,7 @@ class LoginUserState extends State {
                       Navigator.of(context).pushReplacement(MaterialPageRoute(
                           builder: (context) => MyMainPage()));*/
                     },
-                    color: Colors.deepOrange,
+                    color: Colors.blue[600],
                     elevation: 5,
                     textColor: Colors.white,
                     padding: EdgeInsets.fromLTRB(9, 9, 9, 9),
@@ -163,7 +191,7 @@ class LoginUserState extends State {
                           MaterialPageRoute(
                               builder: (context) => RegisterUser()));
                     },
-                    color: Colors.deepOrange,
+                    color: Colors.blue[600],
                     elevation: 5,
                     textColor: Colors.white,
                     padding: EdgeInsets.fromLTRB(9, 9, 9, 9),

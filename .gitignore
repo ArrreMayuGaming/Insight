@@ -42,3 +42,4 @@ app.*.map.json
 
 #key properties files
 key.properties
+key.jks
