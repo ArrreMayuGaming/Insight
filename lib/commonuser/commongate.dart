@@ -6,6 +6,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:insight/animations/fadeanimation.dart';
+import 'package:insight/blogs/showblogpublic.dart';
 import 'package:insight/commonuser/casepage.dart';
 import 'package:insight/commonuser/ismac/analytics.dart';
 import 'package:insight/commonuser/ismac/cloud.dart';
@@ -52,6 +53,16 @@ class _CommonGateState extends State<CommonGate> {
           'assets/logo.png',
           height: MediaQuery.of(context).size.height * 0.06,
         ),
+        actions: <Widget>[
+          IconButton(
+              icon: Icon(Icons.post_add),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    PageRouteBuilder(
+                        pageBuilder: (context, a, b) => ShowPublicPost()));
+              })
+        ],
       ),
       drawer: MainDrawer(),
       body: SafeArea(

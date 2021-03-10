@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:insight/auth/login.dart';
 import 'package:insight/commonuser/commongate.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -81,7 +80,7 @@ class _EmpDrawerState extends State<EmpDrawer> {
               ),
             ),
           ),
-          CustomListItems1(),
+         // CustomListItems1(),
           //CustomListItems2(),
 
           //  CustomListItems4(),
@@ -96,7 +95,7 @@ class _EmpDrawerState extends State<EmpDrawer> {
   }
 }
 
-class CustomListItems1 extends StatelessWidget {
+/*class CustomListItems1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -106,7 +105,10 @@ class CustomListItems1 extends StatelessWidget {
             border: Border(bottom: BorderSide(color: Colors.grey[400]))),
         child: InkWell(
           splashColor: Colors.blue[600],
-          onTap: () {},
+          onTap: () {
+            Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => UploadBlogPublic()));
+          },
           child: Container(
             height: MediaQuery.of(context).size.height * 0.08,
             child: Row(
@@ -118,7 +120,7 @@ class CustomListItems1 extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        'Profile',
+                        'Upload Blog',
                         style: TextStyle(fontSize: 16.0),
                       ),
                     ),
@@ -132,7 +134,7 @@ class CustomListItems1 extends StatelessWidget {
       ),
     );
   }
-}
+}*/
 
 class CustomListItems2 extends StatelessWidget {
   @override

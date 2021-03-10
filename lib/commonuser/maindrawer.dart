@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:insight/auth/login.dart';
+import 'package:insight/commonuser/vmsuserpage.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MainDrawer extends StatefulWidget {
@@ -86,7 +87,7 @@ class _MainDrawerState extends State<MainDrawer> {
           CustomListItems5(),
           CustomListItems6(),
           CustomListItems7(),
-          //CustomListItems8(),
+          CustomListItems8(),
         ],
       ),
     );
@@ -396,7 +397,7 @@ class CustomListItems7 extends StatelessWidget {
   }
 }
 
-/*class CustomListItems8 extends StatelessWidget {
+class CustomListItems8 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -437,4 +438,4 @@ class CustomListItems7 extends StatelessWidget {
       ),
     );
   }
-}*/
+}

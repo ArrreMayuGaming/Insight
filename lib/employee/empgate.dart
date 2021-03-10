@@ -11,9 +11,9 @@ import 'package:insight/commonuser/ismac/cloud.dart';
 import 'package:insight/commonuser/ismac/infrastructure.dart';
 import 'package:insight/commonuser/ismac/mobility.dart';
 import 'package:insight/commonuser/ismac/security.dart';
-import 'package:insight/commonuser/maindrawer.dart';
 import 'package:insight/commonuser/mngt.dart';
 import 'package:insight/employee/empdrawer.dart';
+import 'package:insight/employee/requsets/requests.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class EmpGate extends StatefulWidget {
@@ -51,6 +51,16 @@ class _EmpGateState extends State<EmpGate> {
           'assets/logo.png',
           height: MediaQuery.of(context).size.height * 0.06,
         ),
+        actions: <Widget>[
+          IconButton(
+              icon: Icon(Icons.post_add),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    PageRouteBuilder(
+                        pageBuilder: (context, a, b) => RequestPage()));
+              })
+        ],
       ),
       drawer: EmpDrawer(),
       body: SafeArea(
