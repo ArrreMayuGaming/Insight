@@ -53,7 +53,7 @@ class _MyAppState extends State<MyZonesOptPage> {
                     child: Column(
                       children: [
                         Image.asset(
-                          'assets/ismacPng/s.png',
+                          'assets/ismacPng/a.png',
                           height: MediaQuery.of(context).size.height * 0.12,
                         ),
                         Align(
