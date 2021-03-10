@@ -6,12 +6,12 @@ import 'package:insight/employee/empgate.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter/rendering.dart';
 
-class MyGridZonePage extends StatefulWidget {
+class MyFaceTimeZonePage extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
 }
 
-class _MyAppState extends State<MyGridZonePage> {
+class _MyAppState extends State<MyFaceTimeZonePage> {
   final format = DateFormat("dd-MM-yyyy");
   TextEditingController dateController;
   String getter;

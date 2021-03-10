@@ -14,7 +14,7 @@ class _MyAppState extends State<RequestPage> {
   final ref = FirebaseDatabase.instance
       .reference()
       .child('GRID-EXP-Zone-Requests')
-      .orderByChild('empname')
+      .orderByChild('empname' )
       .equalTo(FirebaseAuth.instance.currentUser.displayName);
 
   @override
@@ -38,6 +38,7 @@ class _MyAppState extends State<RequestPage> {
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
+        physics: BouncingScrollPhysics(),
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -50,6 +51,7 @@ class _MyAppState extends State<RequestPage> {
                 FirebaseAnimatedList(
                   //scrollDirection: Axis.vertical,
                   shrinkWrap: true,
+                  physics: ClampingScrollPhysics(),
                   query: ref,
                   itemBuilder: (BuildContext context, DataSnapshot snapshot,
                       Animation<double> animation, int index) {

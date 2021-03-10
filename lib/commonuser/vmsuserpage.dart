@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
@@ -9,6 +8,8 @@ class UserVMSPage extends StatefulWidget {
 }
 
 class _UserVMSPageState extends State<UserVMSPage> {
+  final phoneController = TextEditingController();
+
   String qrCode = 'Unknown';
   @override
   Widget build(BuildContext context) {
@@ -16,9 +17,27 @@ class _UserVMSPageState extends State<UserVMSPage> {
       // ignore: deprecated_member_use
       body: Center(
         // ignore: deprecated_member_use
-        child: RaisedButton(
-          onPressed: () {},
-          child: Text('Scan'),
+        child: Column(
+          children: <Widget>[
+            SizedBox(
+              height: 50,
+            ),
+            TextFormField(
+              controller: phoneController,
+              decoration: InputDecoration(
+                hintText: 'phn',
+                contentPadding: EdgeInsets.all(15.0),
+                border: InputBorder.none,
+                filled: true,
+                fillColor: Colors.grey[200],
+              ),
+            ),
+            // ignore: deprecated_member_use
+            RaisedButton(
+              onPressed: () {},
+              child: Text('Scan'),
+            ),
+          ],
         ),
       ),
     );

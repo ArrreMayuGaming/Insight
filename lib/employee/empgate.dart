@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_text/animated_text.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -53,7 +54,7 @@ class _EmpGateState extends State<EmpGate> {
         ),
         actions: <Widget>[
           IconButton(
-              icon: Icon(Icons.post_add),
+              icon: Icon(Icons.edit),
               onPressed: () {
                 Navigator.push(
                     context,
@@ -80,7 +81,7 @@ class _EmpGateState extends State<EmpGate> {
                       Container(
                         padding: EdgeInsets.all(5),
                         width: MediaQuery.of(context).size.width,
-                        height: size.height * 0.25,
+                        height: size.height * 0.234,
                         decoration: new BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(25),
@@ -110,7 +111,19 @@ class _EmpGateState extends State<EmpGate> {
                                       ),
                                     ),*/
                                     Text(
-                                      'Insight Business Machines \nPvt. Ltd.',
+                                      'Hello',
+                                      style: GoogleFonts.roboto(
+                                        textStyle: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w300,
+                                        ),
+                                      ),
+                                      textAlign: TextAlign.left,
+                                    ),
+                                    Text(
+                                      FirebaseAuth
+                                          .instance.currentUser.displayName,
                                       style: GoogleFonts.roboto(
                                         textStyle: TextStyle(
                                           color: Colors.black,

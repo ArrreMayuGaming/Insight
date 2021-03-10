@@ -1,6 +1,5 @@
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
-import 'package:insight/auth/signup.dart';
 import 'package:insight/employee/empgate.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -184,7 +183,7 @@ class LoginUserState extends State {
                     ),
                   ),
                   // ignore: deprecated_member_use
-                  RaisedButton(
+                  /* RaisedButton(
                     onPressed: () {
                       Navigator.push(
                           context,
@@ -199,7 +198,7 @@ class LoginUserState extends State {
                       'signup',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                  ),
+                  ),*/
                 ],
               ),
               Visibility(
