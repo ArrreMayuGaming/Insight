@@ -84,7 +84,7 @@ class _MyAppState extends State<RequestPage> {
     if (status == 'pending') {
       statusColor = Colors.yellow;
     }
-    if (status == 'Rejected') {
+    if (status == 'rejected') {
       statusColor = Colors.red[800];
     }
     if (status == 'approve') {
